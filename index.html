@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fanorona-Telo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CECI EST UN TEST</h1>
+    <div class="app">
+        <header class="header">
+            <h1 class="title">Fanorona-Telo</h1>
+            <p class="subtitle">Jeu d'alignement traditionnel malgache</p>
+        </header>
+        <div class="settings">
+            <div class="setting-group">
+                <label for="game-mode">Mode</label>
+                <select id="game-mode">
+                    <option value="hvh">Humain vs Humain</option>
+                    <option value="hva" selected>Humain vs IA</option>
+                    <option value="ava">IA vs IA (Demo)</option>
+                </select>
+            </div>
+            <div class="setting-group">
+                <label for="ai-difficulty">Difficulte IA</label>
+                <select id="ai-difficulty">
+                    <option value="easy">Facile</option>
+                    <option value="medium">Moyen</option>
+                    <option value="hard" selected>Difficile</option>
+                </select>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="status" id="status">Joueur 1 - Phase de placement</div>
+            <div class="board-wrapper">
+                <svg class="board-svg" id="board-svg" viewBox="0 0 300 300"></svg>
+                <div class="pieces-layer" id="pieces-layer"></div>
+            </div>
+            <div class="controls">
+                <button class="btn" id="btn-new">Nouvelle Partie</button>
+                <button class="btn" id="btn-undo" disabled>Annuler</button>
+                <button class="btn" id="btn-redo" disabled>Refaire</button>
+                <button class="btn btn-stop hidden" id="btn-stop">Stop Demo</button>
+            </div>
+        </div>
+        <div class="perf-panel" id="perf-panel">
+            <div class="perf-title">Performance IA</div>
+            <div class="perf-row">
+                <span>Temps de calcul:</span>
+                <span id="perf-time">- ms</span>
+            </div>
+            <div class="perf-row">
+                <span>Noeuds explores:</span>
+                <span id="perf-nodes">-</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
