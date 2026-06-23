@@ -1,8 +1,3 @@
-**✅ Voici un README.md complet, professionnel et bien structuré** pour ton projet **TP-ALGO**.
-
-Copie-colle ce contenu dans ton fichier `README.md` sur GitHub.
-
-```markdown
 # TP-ALGO - Fanoron-telo avec IA (Minimax + Alpha-Beta)
 
 **Projet de Hackathon - ISPM (Institut Supérieur Polytechnique de Madagascar)**
@@ -127,12 +122,3 @@ Ce projet est open-source. Tu es libre de l'utiliser, le modifier et le distribu
 ---
 
 **Made with ❤️ for Madagascar & Algorithmic Excellence**
-```
-
----
-
-### Comment l'améliorer encore plus ?
-- Ajoute des captures d’écran du jeu dans le README (très recommandé).
-- Si tu veux une version encore plus académique (avec explications sur Minimax), dis-le-moi.
-
-Tu veux que je modifie quelque chose (ajouter des sections, changer le ton, etc.) ?
